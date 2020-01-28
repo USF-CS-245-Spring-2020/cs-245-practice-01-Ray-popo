@@ -12,7 +12,9 @@ public class Practice01MathIterative implements Practice01Math {
 
     @Override
     public int fib(int n) throws Exception {
-        if (n<=1){
+        if(n<0) {
+            throw new Exception();
+        } else if (n<=1){
             return n;
         }
         int f=1;
