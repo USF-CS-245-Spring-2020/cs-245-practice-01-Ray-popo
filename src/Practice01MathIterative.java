@@ -2,9 +2,12 @@ public class Practice01MathIterative implements Practice01Math {
     @Override
     public int fact(int n) throws Exception {
         int f=1;
-        for(int i=1; i<n;i++)
+        if (n<0)
+            throw new Exception();
+        else
+            for(int i=1; i<n;i++)
             f=f*(i+1);
-        return f;
+            return f;
     }
 
     @Override
